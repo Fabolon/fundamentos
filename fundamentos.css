@@ -14,10 +14,10 @@
     --color-enfasis2:#78ABA4;
     --tamano-titulo:30px;
 }
-/* Selector universal */
+/* "*" Selector universal */
 *{
     margin: 0%;
-    width: 500px;;
+    
 }
 body {
     
@@ -37,12 +37,16 @@ h2 {
 /* ---------------------HEADER--------------------- */
 header{
     /* Definir ancho del header */
-    width:100vw; 
+    width:96.5vw; 
     /* viewport width ancho de pantalla */
     /* altura */
     height: 10vh; 
     /*viewport height altura de pantalla */
     background-color:var(--color-enfasis);
+    /* Margen exterior */
+    margin: 15px;
+    /* Borde curvo */
+    border-radius: 15px;
 }
 
 nav{
@@ -58,20 +62,49 @@ nav{
 .lista{
     display:flex;
     gap: 30px;
+    list-style: none; /*propiedad de los ul y ol*/
 }
 .logo{
     width: 50px;
-    height: 50px;
+    height: 50px;  
 }
 
-
-
-
+a {
+    color: var(--color-enfasis2);
+   text-decoration: none;
+}
 /* ----------------------MAIN---------------------- */
 
+main{
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+h1 ,h2{
+    /*Alineacion de texto*/
+    text-align: center;
+
+}
+.contenedor{
+    background-color: var(--color-enfasis2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items: center;
+    padding: 30px;
 
 
+}
 
+.semantica{
+    /*es mejor usar porcentajes para las imagnes*/
+    width: 50%;
+    border-radius: 15px;
+}
 
 
 /*----------------------FOOTER--------------------- */
